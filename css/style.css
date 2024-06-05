@@ -9,11 +9,6 @@ a{
   text-decoration: none;
   color: inherit;
 }
-.fa-whatsapp{
-  border-radius: 50px;
-  color: white;
-  background: rgb(51, 80, 8);
-}
 html,body{
   height: 100vh;
   width: 100%;
