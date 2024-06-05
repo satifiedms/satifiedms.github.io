@@ -112,7 +112,7 @@ header ul li a:hover::after,a.active::after{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 22px;
   animation: wave 3s infinite;
   position: relative;
 }
