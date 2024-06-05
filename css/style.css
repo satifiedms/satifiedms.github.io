@@ -183,7 +183,7 @@ header ul li a:hover::after,a.active::after{
 }
 /* ---------------------CONTACT STYLE SPACE-------------------- */
 .contact-content .socials{
-  width: 295px;
+  width: 275px;
   display: flex;
   flex-direction: column;
   row-gap: 25px; 
@@ -209,6 +209,10 @@ header ul li a:hover::after,a.active::after{
   z-index: 9;
 }
 .contact-content .socials a p{
+  display: flex;
+  align-items: center;
+  height: 45px;
+  width: 85%;
   padding: 0 45px;
   z-index: 9;
 }
@@ -222,7 +226,7 @@ header ul li a:hover::after,a.active::after{
   left: 0;
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   background: rgba(0, 0, 0, .3);
 }
 .contact-content .socials li.soc-i::before{
@@ -232,8 +236,8 @@ header ul li a:hover::after,a.active::after{
   left: 0;
   height: 100%;
   width: 45px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   background: rgba(0, 0, 0, .5);
 }
 .contact-content .services{
