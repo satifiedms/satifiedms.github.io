@@ -182,6 +182,39 @@ header ul li a:hover::after,a.active::after{
   100%{ left: 650px;}
 }
 /* ---------------------CONTACT STYLE SPACE-------------------- */
+.resume-content{
+  display: flex;
+  flex-direction: column;
+}
+.resume-content a{
+  height: 42px;
+  width: 200px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  padding-left: 25px;
+  border-radius: 10px;
+  position: relative;
+}
+.resume-content a:hover{
+  color: rgb(64, 100, 8);
+}
+.resume-content a::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .5);
+  border-radius: 10px;
+}
+.resume-content a i{
+  z-index: 10;
+}
+.resume-content a p{
+  z-index: 10;
+}
 .contact-content .socials{
   width: 275px;
   display: flex;
