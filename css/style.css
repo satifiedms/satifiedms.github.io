@@ -402,7 +402,7 @@ header ul li a:hover::after,a.active::after{
    right: 25px;
   }
   .home-content .socials{
-    right: 25px;
+    right: 75px;
   }
   .home-content .socials li{
     font-size: 20px;
