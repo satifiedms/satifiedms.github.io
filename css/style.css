@@ -210,10 +210,10 @@ header ul li a:hover::after,a.active::after{
   border-radius: 10px;
 }
 .resume-content a i{
-  z-index: 10;
+  z-index: 9;
 }
 .resume-content a p{
-  z-index: 10;
+  z-index: 9;
 }
 .contact-content .socials{
   width: 275px;
