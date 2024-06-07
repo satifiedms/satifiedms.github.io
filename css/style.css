@@ -432,7 +432,7 @@ header ul li a:hover::after,a.active::after{
     line-height: 22px;
   }
   .home-content .profile-img{
-   right: 25px;
+   right: 0;
   }
   .home-content .socials{
     left: 75px;
