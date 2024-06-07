@@ -435,6 +435,7 @@ header ul li a:hover::after,a.active::after{
    right: 25px;
   }
   .home-content .socials{
+    left: 75px;
     column-gap: 20px;
   }
   .home-content .socials li{
