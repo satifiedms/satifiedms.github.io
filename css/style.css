@@ -435,11 +435,13 @@ header ul li a:hover::after,a.active::after{
    right: 25px;
   }
   .home-content .socials{
-    left: 75px;
+    column-gap: 20px;
   }
   .home-content .socials li{
-    font-size: 20px;
-  }
+  height: 32px;
+  width: 35px;
+  font-size: 20px;
+}
   .about-content,.resume-content,.port-content,.contact-content{
     width: 100%;
     padding: 45px 25px 0 25px;
