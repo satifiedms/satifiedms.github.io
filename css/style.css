@@ -435,7 +435,7 @@ header ul li a:hover::after,a.active::after{
    right: 25px;
   }
   .home-content .socials{
-    right: 50%;
+    right: 75%;
     transform: translateX(-50%);
   }
   .home-content .socials li{
