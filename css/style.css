@@ -435,8 +435,7 @@ header ul li a:hover::after,a.active::after{
    right: 25px;
   }
   .home-content .socials{
-    right: 75%;
-    transform: translateX(-50%);
+    left: 75px;
   }
   .home-content .socials li{
     font-size: 20px;
