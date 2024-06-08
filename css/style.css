@@ -185,6 +185,7 @@ header ul li a:hover::after,a.active::after{
 .resume-content{
   display: flex;
   flex-direction: column;
+  column-gap: 15px;
 }
 .resume-content a{
   height: 42px;
