@@ -196,6 +196,7 @@ header ul li a:hover::after,a.active::after{
   padding-left: 25px;
   border-radius: 10px;
   position: relative;
+  margin-bottom: 15px;
   border: 1px solid red;
 }
 .resume-content a:hover{
