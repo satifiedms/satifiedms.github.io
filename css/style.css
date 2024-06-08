@@ -196,6 +196,7 @@ header ul li a:hover::after,a.active::after{
   padding-left: 25px;
   border-radius: 10px;
   position: relative;
+  border: 1px solid red;
 }
 .resume-content a:hover{
   color: rgb(64, 100, 8);
