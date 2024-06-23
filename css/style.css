@@ -383,7 +383,7 @@ header ul li a:hover::after,a.active::after{
   header .nav-toggle{
     height: 20px;
     width: 31px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
