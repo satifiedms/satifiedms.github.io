@@ -381,7 +381,6 @@ header ul li a:hover::after,a.active::after{
     border-bottom-right-radius: 25px;
   }
   header .nav-toggle{
-    border: 1px solid red;
     height: 20px;
     width: 31px;
     margin-bottom: 2px;
