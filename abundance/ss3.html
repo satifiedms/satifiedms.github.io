@@ -59,8 +59,8 @@
       <p> A clustered index determines the physical order of data in a table. In other words, the data rows are stored in the same
         order as the index.
       </p>
-      <p><i class="fa fa-chevron-right"></i> A table can have only one clustered index because the data rows themselves can only be sorted in one order.</p>
-      <p><i class="fa fa-chevron-right"></i> The primary key of a table is often created as a clustered index by default.</p>
+      <p>i. A table can have only one clustered index because the data rows themselves can only be sorted in one order.</p>
+      <p>ii. The primary key of a table is often created as a clustered index by default.</p>
       <br>
 
       <p><b>2. Unclustered (Non-Clustered) Index:</b></p>
@@ -68,8 +68,8 @@
         Instead, it creates a separate structure (a copy of selected columns and pointers) that points to the location of the
         data rows in the table.
       </p>
-      <p><i class="fa fa-chevron-right"></i> A table can have multiple non-clustered indexes.</p>
-      <p><i class="fa fa-chevron-right"></i> It’s like having a separate “lookup list” that points to where the data is actually stored.</p>
+      <p>i. A table can have multiple non-clustered indexes.</p>
+      <p>ii. It’s like having a separate “lookup list” that points to where the data is actually stored.</p>
       
       <br>
 
@@ -122,16 +122,16 @@
       <p> A dense index contains an index record (or entry) for every search key value in the data file.
         That means every data record in the table has a corresponding index entry.
       </p>
-      <p><i class="fa fa-chevron-right"></i> Each entry in the dense index holds the search key value and a pointer (address) to the record in the data file.</p>
-      <p><i class="fa fa-chevron-right"></i> Dense indexes are typically used when direct access to every record is desired or when the data file is unordered.</p>
+      <p>i. Each entry in the dense index holds the search key value and a pointer (address) to the record in the data file.</p>
+      <p>ii. Dense indexes are typically used when direct access to every record is desired or when the data file is unordered.</p>
       <br>
 
       <p><b>2. Sparse Index:</b></p>
       <p> A sparse index contains entries for only some of the records in the data file.
         Typically, one index entry is created for each data block or page, pointing to the first record in that block.
       </p>
-      <p><i class="fa fa-chevron-right"></i> The data file must be sorted (ordered) on the search key for sparse indexing to be effective.</p>
-      <p><i class="fa fa-chevron-right"></i> Once the appropriate block is located through the index, the specific record is searched sequentially within that block.</p>
+      <p>i. The data file must be sorted (ordered) on the search key for sparse indexing to be effective.</p>
+      <p>ii. Once the appropriate block is located through the index, the specific record is searched sequentially within that block.</p>
       <br>
 
       <div class="table-ctn">
@@ -181,16 +181,16 @@
       <p> A primary index is built on a field that defines the physical ordering of records in the data file — usually the primary key.
         In other words, the data file is stored in sorted order on the key field used by the primary index.
       </p>
-      <p><i class="fa fa-chevron-right"></i> Each index entry contains the key value and a pointer to the first record with that key value.</p>
-      <p><i class="fa fa-chevron-right"></i> Since the data file is ordered, a sparse index is typically used</p>
+      <p>i. Each index entry contains the key value and a pointer to the first record with that key value.</p>
+      <p>ii. Since the data file is ordered, a sparse index is typically used</p>
       <br>
 
       <p><b>2. Secondary Index:</b></p>
       <p> A secondary index is created on a non-ordering field — that is, a field that does not define the physical storage order of the data file.
         It provides an alternative access path to data records.
       </p>
-      <p><i class="fa fa-chevron-right"></i> Usually dense because the data file is not ordered by that key.</p>
-      <p><i class="fa fa-chevron-right"></i> Used when queries frequently involve non-primary key columns.</p>
+      <p>i. Usually dense because the data file is not ordered by that key.</p>
+      <p>ii. Used when queries frequently involve non-primary key columns.</p>
       <br>
 
       <div class="table-ctn">
@@ -238,8 +238,8 @@
       <p> A composite search key index (also known as a multi-level or concatenated key index) is built on two or more columns of a table.
         The combined values of these columns form the search key used in the index.
       </p>
-      <p><i class="fa fa-chevron-right"></i> Composite indexes improve performance for queries involving multiple columns in combination.</p>
-      <p><i class="fa fa-chevron-right"></i> The order of columns in the composite key is crucial — the index is most efficient when queries filter based on the
+      <p>i. Composite indexes improve performance for queries involving multiple columns in combination.</p>
+      <p>ii. The order of columns in the composite key is crucial — the index is most efficient when queries filter based on the
       leading column(s).</p>
       <br>
 
@@ -284,7 +284,7 @@
       </div>
       <br>
 
-      <p><b>Remark: </b>This is the complete note for the week One and Two. Explanations will come in our next class, endeavor to complete your note before then. Cheers!</p>
+      <p><b>Remark: </b>This is the complete note for the week One and Two, explanations will come in our next class, endeavor to complete your note before then.</p>
     </div>
   </main>
 
@@ -292,4 +292,3 @@
 </body>
 
 </html>
-
