@@ -27,6 +27,26 @@
 .abundance .header span{
   color: grey;
 }
+.abundance .table-ctn .table-title{
+  text-align: center;
+  font-weight: 600;
+}
+.abundance .table-ctn table{
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table th{
+  background: whitesmoke;
+}
+main table th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+table tr:nth-child(even) {
+  background: rgb(0, 0, 210, .01);
+}
 @media (min-width: 600px) {
  .abundance{
   padding: 45px;
@@ -36,4 +56,4 @@
   .abundance{
    padding: 45px 125px;
   } 
- }
+}
