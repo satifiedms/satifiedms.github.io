@@ -1,1 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.abundance{
+  padding: 45px 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  line-height: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+.abundance .header{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.abundance .header div{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+}
+.abundance .header label{
+  font-weight: bold;
+}
+.abundance .header span{
+  color: grey;
+}
+.abundance .table-ctn .table-title{
+  text-align: center;
+  font-weight: 600;
+}
+.abundance .table-ctn table{
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table th{
+  background: whitesmoke;
+}
+main table th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+table tr:nth-child(even) {
+  background: rgb(0, 0, 210, .01);
+}
+@media (min-width: 600px) {
+ .abundance{
+  padding: 45px;
+ } 
+}
+@media (min-width: 990px) {
+  .abundance{
+   padding: 45px 125px;
+  } 
+}
 
