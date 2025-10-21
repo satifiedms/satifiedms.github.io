@@ -47,6 +47,24 @@ td {
 table tr:nth-child(even) {
   background: rgb(0, 0, 210, .01);
 }
+.abundance .img-wrapper{
+  width: 100%;
+  height: auto;
+  position: relative;
+  line-height: 18px;
+}
+.abundance .img-wrapper img{
+  width: 100%;
+  height: auto;
+}
+.abundance .img-wrapper span{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+/* -------------------- MEDIA SECTION --------------- */
 @media (min-width: 600px) {
  .abundance{
   padding: 45px;
@@ -55,6 +73,12 @@ table tr:nth-child(even) {
 @media (min-width: 990px) {
   .abundance{
    padding: 45px 125px;
-  } 
+  }
+  .abundance .img-wrapper {
+    width: 75%;
+    height: auto;
+    position: relative;
+    line-height: 25px;
+    margin: 0 auto;
+  }
 }
-
