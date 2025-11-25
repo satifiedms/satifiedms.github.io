@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Abundance Model School</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -27,264 +27,127 @@
       <div class="h1"><label>School:</label><span>Abundance Model College</span></div>
       <div class="h1"><label>Class:</label><span>Senior Secondary School 3</span></div>
       <div class="h1"><label>Subject:</label><span>Computer Studies</span></div>
-      <div class="h1"><label>Topic:</label><span>Indexing In Database Systems</span></div>
+      <div class="h1"><label>Topic:</label><span>Database Security</span></div>
     </div>
 
     <div class="content">
       <p><b>Introduction</b></p>
       </p>
-        In database systems, efficient data retrieval is one of the most critical aspects of performance. When databases grow
-        large, searching for data without any form of optimization can become slow and resource-intensive. Indexes are special
-        data structures that improve the speed of data retrieval operations on a database table, similar to how an index in a
-        textbook helps you quickly locate a topic without reading the entire book.      
+        Database security refers to the processes, tools, policies, and techniques used to protect a database from unauthorized access, misuse, corruption, loss, or damage.
+        It ensures that data stored in a database remains confidential, accurate, and available to authorized users only. 
+        In simple terms, database security protects data from threats and ensures it remains safe, correct, and accessible when
+        needed.
       </p>
       <br>
 
-      <p><b>Definition of an Index</b></p>
-      </p>
-        An index is a database object that provides a fast and efficient way to access data in a table based on specific columns.
-        It works like a “lookup table” that helps the database management system (DBMS) quickly locate records without scanning
-        the entire table.
-      </p>
-      <p><b>In simple term:</b></p>
-      <p>i. An index is a data structure that stores the values of one or more columns and pointers to the corresponding rows in a table.</p>
-      <p>ii. It is used primarily to speed up SELECT queries and WHERE clause filtering.</p>
-      <p>iii. While indexes improve read operations, they can slightly slow down INSERT, UPDATE, and DELETE operations because the
-        index also needs to be updated.
-      </p>
+      <p><b>Importance of Database Security</b></p>
+      </p><b>i. Protection of Sensitive Information - </b>Databases often store personal data, financial records, health information, and business secrets. Security helps prevent theft or exposure.</p>
+      <p><b>ii. Preventing Unauthorized Access - </b> Strong security measures ensure only the right people can view or modify information.</p>
+      <p><b>iii. Maintaining Data Integrity - </b>Security protects data from being altered, deleted, or corrupted by accident or malicious attacks.</p>
+      <p><b>iv. Ensuring Business Continuity - </b>Organizations rely on databases to operate. Security ensures the database remains available, even during failures.</p>
+      <p><b>v. Compliance with Laws and Regulations - </b>Many countries and industries have data protection laws (e.g., GDPR, HIPAA). Database security ensures compliance.</p>
+      <p><b>vi. Preventing Financial Loss and Reputation Damage - </b>Data breaches can cause loss of money, customer trust, and brand reputation.</p>
       <br>
 
-      <p><b>Clustered Versus Non-clustered Indexes</b></p>
-      <p><b>1. Clustered Index:</b></p>
-      <p> A clustered index determines the physical order of data in a table. In other words, the data rows are stored in the same
-        order as the index.
-      </p>
-      <p>i. A table can have only one clustered index because the data rows themselves can only be sorted in one order.</p>
-      <p>ii. The primary key of a table is often created as a clustered index by default.</p>
+      <p><b>Access Control in Database Security</b></p>
+      <p>Access control refers to the rules and mechanisms that determine who can access the database and what actions they are
+        allowed to perform.</p>
       <br>
 
-      <p><b>2. Unclustered (Non-Clustered) Index:</b></p>
-      <p> An unclustered index, also called a non-clustered index, does not affect the physical order of data in the table.
-        Instead, it creates a separate structure (a copy of selected columns and pointers) that points to the location of the
-        data rows in the table.
-      </p>
-      <p>i. A table can have multiple non-clustered indexes.</p>
-      <p>ii. It’s like having a separate “lookup list” that points to where the data is actually stored.</p>
-      
+      <p><b>Types of Access Control:</b></p>
+      <p><b>i. Discretionary Access Control (DAC) - </b>The owner of the data decides who gets access. Example: A manager granting access to certain staff.</p>
+      <p><b>ii. Mandatory Access Control (MAC) - </b>Access is based on predefined security levels (e.g., Top Secret, Confidential). Users must have the appropriate clearance.</p>
+      <p><b>iii. Role-Based Access Control (RBAC) - </b>Access is based on user roles within an organization.</p>
+      <p><b>Example:</b></p>
+      <p>i. A cashier can enter sales data</p>
+      <p>ii. A supervisor can update sales records</p>
+      <p>iii. An admin can manage all users</p>
       <br>
 
-      <div class="table-ctn">
-        <p><b>Comparison: </b>Clustered Versus Unclustered Indexes</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th>Clustered Index</th>
-              <th>Unclustered Index</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><b>Physical Order of Data:</b></td>
-              <td>Data rows are stored in the same order as the index.</td>
-              <td>Data rows are stored separately from the index structure.</td>
-            </tr>
-            <tr>
-              <td><b>Number per Table:</b></td>
-              <td>Only one clustered index is allowed per table.</td>
-              <td>Multiple unclustered indexes can be created.</td>
-            </tr>
-            <tr>
-              <td><b>Storage Requirement:</b></td>
-              <td>Does not require extra storage because data itself acts as the index.</td>
-              <td>Requires additional storage space for the index structure.</td>
-            </tr>
-            <tr>
-              <td><b>Data Retrieval Speed:</b></td>
-              <td>Faster for range queries and large result sets.</td>
-              <td>Faster for point lookups and smaller result sets.</td>
-            </tr>
-            <tr>
-              <td><b>Example Use Case:</b></td>
-              <td>Primary key columns, where data is frequently retrieved in sorted order.</td>
-              <td>Columns used frequently in WHERE clauses or JOIN conditions.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
+      <p><b>Encryption</b></p>
+      <p>Encryption is the process of converting data into a coded form so that it cannot be understood by unauthorized users.</p>
       <br>
-      <p><b>Note: </b>Beyond the basic classification of indexes as <b>Clustered</b> or <b>Non-clustered</b>, indexes can also be classified based on record coverage, relation to data file order, and key composition.</p>
+      <p><b>Types of Encryption in Databases:</b></p>
+      <p><b>i. Data-at-Rest Encryption - </b>Secures stored data on disks or backup files.</p>
+      <p><b>ii. Data-in-Transit Encryption - </b>Protects data moving between systems, such as between a web app and a database server.</p>
+      <p><b>iii. Column-level or Field-level Encryption - </b>Specific sensitive data such as passwords, credit card numbers, or medical data are encrypted.</p>
       <br>
 
-      <p><b>Dense Versus Sparse Indexes:</b></p>
-      <p><b>1. Dense Index:</b></p>
-      <p> A dense index contains an index record (or entry) for every search key value in the data file.
-        That means every data record in the table has a corresponding index entry.
-      </p>
-      <p>i. Each entry in the dense index holds the search key value and a pointer (address) to the record in the data file.</p>
-      <p>ii. Dense indexes are typically used when direct access to every record is desired or when the data file is unordered.</p>
+      <p><b>Importance of Encryption</b></p>
+      <p>i. Prevents data theft even when hackers break into the server</p>
+      <p>ii. Protects sensitive information</p>
+      <p>iii. Helps organizations meet compliance requirements</p>
+      <p>iv. Ensures data privacy and confidentiality</p>
+
+      <p><b>Data Integrity</b></p>
+      <p>Integrity refers to the correctness, accuracy, and consistency of data in a database.</p>
       <br>
 
-      <p><b>2. Sparse Index:</b></p>
-      <p> A sparse index contains entries for only some of the records in the data file.
-        Typically, one index entry is created for each data block or page, pointing to the first record in that block.
-      </p>
-      <p>i. The data file must be sorted (ordered) on the search key for sparse indexing to be effective.</p>
-      <p>ii. Once the appropriate block is located through the index, the specific record is searched sequentially within that block.</p>
+      <p><b>Ways to Maintain Data Integrity:</b></p>
+      <p>i. Validation rules (e.g., age cannot be negative)</p>
+      <p>ii. Constraints (primary key, foreign key, unique, check constraints)</p>
+      <p>iii. Backups and transaction logs</p>
+      <p>iv. Avoiding duplicate records</p>
+      <p>v. Preventing unauthorized changes</p>
       <br>
 
-      <div class="table-ctn">
-        <p><b>Comparison: </b>Dense Versus Sparse Index</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th>Dense Index</th>
-              <th>Sparse Index</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><b>Index Entries:</b></td>
-              <td>One entry per record.</td>
-              <td>One entry per block or group of records.</td>
-            </tr>
-            <tr>
-              <td><b>Storage Space:</b></td>
-              <td>High.</td>
-              <td>Low.</td>
-            </tr>
-            <tr>
-              <td><b>Search Time:</b></td>
-              <td>Faster (direct access).</td>
-              <td>Slower (requires block search).</td>
-            </tr>
-            <tr>
-              <td><b>File Organization:</b></td>
-              <td>Works with ordered and unordered files.</td>
-              <td>Requires ordered data files.</td>
-            </tr>
-            <tr>
-              <td><b>Example Use Case:</b></td>
-              <td>Typically used for secondary indexing.</td>
-              <td>Commonly used for primary indexing.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <p><b>Types of Integrity:</b></p>
+      <p><b>Entity Integrity: </b>Each record must have a unique primary key</p>
+      <p><b>Referential Integrity: </b>Relationship between tables must remain consistent</p>
+      <p><b>Domain Integrity: </b>Data values must be valid according to defined rules</p>
+      <br>
+
+      <p><b>Data Availability</b></p>
+      <p>Availability ensures that authorized users can access the database whenever needed.</p>
+      <br>
+
+      <p><b>How Availability is Ensured:</b></p>
+      <p>i. Regular backups</p>
+      <p>ii. Redundant systems and failover servers</p>
+      <p>iii. Reliable power supply and network connections</p>
+      <p>iv. Database performance tuning</p>
+      <p>v. Protection against Denial-of-Service (DoS) attacks</p>
+      <p>vi. Disaster recovery plans</p>
+      <p>High availability ensures continuous access, especially for systems that run 24/7 (banks, hospitals, airlines, etc.).</p>
       <br>
       
-      <p><b>Primary and Secondary Indexes: </b> The classification of indexes as primary or secondary depends on their relationship to the ordering of data records in
-      the data file.</p>
-      <p><b>1. Primary Index:</b></p>
-      <p> A primary index is built on a field that defines the physical ordering of records in the data file — usually the primary key.
-        In other words, the data file is stored in sorted order on the key field used by the primary index.
+      <p><b>Role of the Database Administrator (DBA) in Security</b></p>
+      <p>The Database Administrator plays a central role in maintaining database security.</p>
+      <br>
+
+      <p><b>Key Responsibilities of the DBA:</b></p>
+      <p><b>i. User Management</b></p>
+      <p>- Creating and deleting user accounts</p>
+      <p>- Assigning roles and privileges</p>
+      <p>- Enforcing strong authentication methods</p>
+      <br>
+
+      <p><b>ii. Implementing Access Control Policies</b></p>
+      <p>Ensuring that users only access the data they are authorized to use.</p>
+      <br>
+
+      <p><b>iii. Monitoring and Auditing Database Activities</b></p>
+      <p>Tracking user actions through logs to detect suspicious activities early.</p>
+      <br>
+
+      <p><b>iv. Backup and Recovery Management</b></p>
+      <p>Making regular backups and designing disaster recovery strategies.</p>
+      <br>
+
+      <p><b>v. Applying Security Patches and Updates</b></p>
+      <p>Keeping the database software updated to protect against vulnerabilities.</p>
+      <br>
+      
+      <p><b>vi. Designing and Enforcing Security Policies</b></p>
+      <p>Setting rules for password strength, data access, and system usage.</p>
+      <br>
+
+      <p><b>Summary</b></p>
+      <p>Database security ensures the confidentiality, integrity, and availability of data.
+        It involves access control, encryption, integrity checks, and availability measures.
+        The Database Administrator plays a crucial role in implementing, managing, and monitoring all security practices to
+        protect the database fromthreats.
       </p>
-      <p>i. Each index entry contains the key value and a pointer to the first record with that key value.</p>
-      <p>ii. Since the data file is ordered, a sparse index is typically used</p>
-      <br>
-
-      <p><b>2. Secondary Index:</b></p>
-      <p> A secondary index is created on a non-ordering field — that is, a field that does not define the physical storage order of the data file.
-        It provides an alternative access path to data records.
-      </p>
-      <p>i. Usually dense because the data file is not ordered by that key.</p>
-      <p>ii. Used when queries frequently involve non-primary key columns.</p>
-      <br>
-
-      <div class="table-ctn">
-        <p><b>Comparison: </b>Primary Versus Secondary Index</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th>Primary Index</th>
-              <th>Secondary Index</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><b>Based On:</b></td>
-              <td>Ordering key (usually primary key)</td>
-              <td>Non-ordering field</td>
-            </tr>
-            <tr>
-              <td><b>Index Type:</b></td>
-              <td>Usually sparse.</td>
-              <td>Usually dense.</td>
-            </tr>
-            <tr>
-              <td><b>Data File Organization:</b></td>
-              <td>Data file is ordered on the key.</td>
-              <td>Data file is unordered.</td>
-            </tr>
-            <tr>
-              <td><b>Number Allowed:</b></td>
-              <td>Only one per table.</td>
-              <td>Multiple per table.</td>
-            </tr>
-            <tr>
-              <td><b>Storage Requirement:</b></td>
-              <td>Low</td>
-              <td>High.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <br>
-
-      <p><b>Indexes Using Composite Search Keys:</b></p>
-      <p> A composite search key index (also known as a multi-level or concatenated key index) is built on two or more columns of a table.
-        The combined values of these columns form the search key used in the index.
-      </p>
-      <p>i. Composite indexes improve performance for queries involving multiple columns in combination.</p>
-      <p>ii. The order of columns in the composite key is crucial — the index is most efficient when queries filter based on the
-      leading column(s).</p>
-      <br>
-
-      <div class="table-ctn">
-        <p><b>Comparison: </b>Single-Column Versus Composite Indexes</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th>Single-Column</th>
-              <th>Composite</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><b>Indexed Columns:</b></td>
-              <td>One</td>
-              <td>Two or More</td>
-            </tr>
-            <tr>
-              <td><b>Query Optimization:</b></td>
-              <td>Best for filters on single field.</td>
-              <td>Best for queries involving multiple fields.</td>
-            </tr>
-            <tr>
-              <td><b>Storage Requirement:</b></td>
-              <td>Less.</td>
-              <td>More.</td>
-            </tr>
-            <tr>
-              <td><b>Flexibility:</b></td>
-              <td>Limited.</td>
-              <td>High, if queries match key order.</td>
-            </tr>
-            <tr>
-              <td><b>Example Use Case:</b></td>
-              <td>Search by Student_ID.</td>
-              <td>Search by Department and Year.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <br>
-
-      <p><b>Remark: </b>This is the complete note for the week Two and Three, explanations will come in our next class, endeavor to complete your note before then.</p>
     </div>
   </main>
 
@@ -292,4 +155,3 @@
 </body>
 
 </html>
-
