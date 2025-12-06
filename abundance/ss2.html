@@ -23,146 +23,24 @@
 
 <body>
   <main class="abundance">
-
-      <p><b>AOC: Read all your notes for the objective questions and these topics for the theory.</b></p>
-      <p>1. Data Modeling and all its components</p>
-      <p>2. Database table creation steps and SQL code analysis</p>
-    
     <div class="header">
       <div class="h1"><label>School:</label><span>Abundance Model College</span></div>
       <div class="h1"><label>Class:</label><span>Senior Secondary School 2</span></div>
-      <div class="h1"><label>Subject:</label><span>Computer</span></div>
-      <div class="h1"><label>Topic:</label><span>Entity-Relationship (ER) Model</span></div>
+      <div class="h1"><label>Subject:</label><span>Geography</span></div>
+      <div class="h1"><label>Topic:</label><span>Examination AOC</span></div>
     </div>
 
     <div class="content">
-      <b>NB: Skip the part you have already written.</b>
+      <p><b>Hello everyone. As regards the AOC, you guys already know you're to read all your notes for the objective
+          questions, then you should read extensively on:</b></p>
+      <p>- Denudation</p>
+      <p>- Climate: understand the concepts of Climate change, Global warming, Greenhouse gases and Greenhouse effect </p>
+      <p>- Environmental resources</p>
       <br>
-      <br>
-      <p><b>Introduction to the ER Model</b></p>
-      </p>The Entity Relationship (ER) Model is a conceptual data modeling technique used to visually represent the structure of a
-        database. It shows the major data objects (entities), their characteristics (attributes), and how they relate to one
-        another (relationships).
-      </p>
-      <p>The ER Model was introduced by Peter Chen in 1976 and is widely used in database design before implementing a database
-        in SQL. The diagrams based on the model are called ER Diagrams (ERDs).
-      </p>
-      <br>
-
-      <p><b>Components of the ER Model</b></p>
-      </p><b>1. Entity - </b>An entity is any real-world object, person, place, event, or concept about which data is to be stored.
-        Examples: Student, Course, Employee, Vehicle, Library Book.
-      </p>
-      <p><b>Types of Entities</b></p>
-      <p><b>i. Strong Entity - </b>An entity that has a primary key of its own and can stand independently. E.g Student, Department.</p>
-      <p><b>ii. Weak Entity - </b>An entity that cannot be uniquely identified without another entity (strong entity). E.g Dependent (child) of an Employee.</p>
-      <br>
-
-      </p><b>2. Attributes - </b>Attributes are the properties or characteristics of an entity. Examples: Student, Course, Employee, Vehicle, Library Book.</p>
-      <p><b>Types of Attributes</b></p>
-      <p><b>i. Simple Attribute - </b>They cannot be divided further. E.g Age, Gender.</p>
-      <p><b>ii. Composite Attribute - </b>They can be broken into sub-parts. E.g Example: Full Name → First Name + Middle Name + Last Name.</p>
-      <p><b>iii. Derived Attribute - </b>They are calculated from another attribute. Example: Age derived from Date of Birth.</p>
-      <p><b>iv. Multi-valued Attribute - </b>They are attributes with more than one value. Example: Phone Numbers, Email Addresses.</p>
-      <p><b>iv. Key Attribute - </b>Attributes that uniquely identifies an entity instance. Example: Student_ID, Employee_ID.</p>
-    
-      </p><b>3. Relationships - </b>A relationship describes how entities interact or are connected.</p>
-      <p><b>Types of Relationships (Based on Cardinality)</b></p>
-      <p><b>i. One-to-One (1:1) - </b>One entity relates to at most one entity. Example: One student has one school.</p>
-      <p><b>ii. One-to-Many (1:N) - </b>One entity relates to many entities. Example: One student has many subjects.</p>
-      <p><b>iii. Many-to-Many (M:N) - </b>Many entities relate to many entities. Example: Students register for many subjects; subjects have many students.</p>
-      <br>
-
-      <div class="table-ctn">
-        <p><b>ER Diagram Notations </b></p>
-        <table>
-          <thead>
-            <tr>
-              <th>Concept</th>
-              <th>Symbol</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Entity</td>
-              <td>Rectangle</td>
-            </tr>
-            <tr>
-              <td>Weak Entity</td>
-              <td>Double Rectangle</td>
-            </tr>
-            <tr>
-              <td>Attribute</td>
-              <td>Oval</td>
-            </tr>
-            <tr>
-              <td>Multi-valued Attribute</td>
-              <td>Double Oval</td>
-            </tr>
-            <tr>
-              <td>Relationship</td>
-              <td>Diamond</td>
-            </tr>
-            <tr>
-              <td>Strong Relationship</td>
-              <td>Single Diamond</td>
-            </tr>
-            <tr>
-              <td>Weak Relationship</td>
-              <td>Double Diamond</td>
-            </tr>
-            <tr>
-              <td>Primary Key</td>
-              <td>Attribute with underline</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <br>
-
-      <p><b>Steps in Creating an ER Diagram</b></p>
-      <p>i. Identify all entities (e.g., Student, Course).</p>
-      <p>ii. Identify attributes of each entity.</p>
-      <p>iii. Determine primary keys.</p> 
-      <p>iv. Establish relationships between entities.</p>
-      <p>v. Determine cardinality (1:1, 1:N, M:N).</p>
-      <p>vi. Draw the ER Diagram with appropriate symbols.</p>
-      <p>vii. Review and refine for completeness.</p>
-      <br>
-
-      <p><b>Conversion of ER Model to Relational Model - </b>ER diagrams are usually transformed into database tables (Relational Model)
-        following a set of rules:
-      </p>
-      <p>i. Each entity → becomes a table.</p>
-      <p>ii. Each attribute → becomes a column.</p>
-      <p>iii. Primary key is kept.</p>
-      <p>iv. Relationships </p>
-        <p>→ 1:N: Place foreign key on the N-side table.</p>
-        <p>→ 1:1: Foreign key can go on either side.</p>
-        <p>→ M:N: Create a junction table (associative table).</p>
-      <p>v. Weak entities become tables with foreign key + discriminator.</p>
-      <br>
-
-      <p><b>Advantages of the ER Model</b></p>
-      <p>i. Easy to understand and visualize.</p>
-      <p>ii. Simplifies database design.</p>
-      <p>iii. Helps communicate ideas between developers and stakeholders.</p>
-      <p>iv. Reduces data redundancy.</p>
-      <p>v. Forms a strong foundation for relational databases.</p>
-      <br>
-
-      <p><b>Sample ER Diagram With Three (3) Components; Student, Course and Registration.</b></p>
-      <div class="img-wrapper">
-        <img src="../img/abundance/er-diagram.png" alt="">
-        <span></span>
-      </div>
-
-    </main>
+    </div>
+  </main>
 
   <script src="js/navigate.js"></script>
 </body>
 
 </html>
-
-
-
